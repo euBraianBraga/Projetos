@@ -1,0 +1,92 @@
+.centralizado_cadastro{
+    margin-left: 175px;
+    font-family: 'Noto Serif', serif;
+	padding: 50px;
+	width: 200px;
+	float: left;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    animation-name: centralizado_cadastro;
+    animation-duration: 1s;
+    
+    
+   
+}
+
+@keyframes centralizado_cadastro{
+    0% {opacity: 0; transform: translate(0px,0px)}
+	100% {opacity: 1; transform: translate(-10px,0px)}
+}
+
+
+body{
+	margin: 0;
+    padding: 0;
+    background: url("./img/shyvana.jpg");  
+    background-size: 100%,100% ;
+    background-repeat: no-repeat;
+    /* background-size: cover;
+    background-attachment: fixed; */
+}
+
+
+
+.body label,input {
+    border-radius: 03px;
+    outline: none;
+    margin-top: 3px;
+    right: 140px;
+    width: 200px;
+    padding: 3px;
+    text-align: center;
+   
+}
+
+/*@keyframes centralizado_cadastro {
+    0% {opacity: 0;};
+	50% {opacity:0;};
+	100% {opacity: 1};
+    
+}*/
+
+.img_logo {
+    width: 210px;
+    height: 21 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+}
+
+/* .img_logo_l {
+	width: 50px;
+	margin-top: 5px;
+	margin-left: 3px;
+	float: left;    
+} */
+
+.card2 {
+    color: white;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.origem {
+    border-radius: 05px;
+}
+
+
+
+.img_logoriot {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: 15px;
+    margin-bottom: -15px;
+    margin-top: 10px;
+}
+
+

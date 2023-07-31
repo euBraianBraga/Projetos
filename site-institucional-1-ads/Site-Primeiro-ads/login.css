@@ -1,0 +1,102 @@
+
+body{
+	margin: 0;
+    padding: 0;
+    background-size: 100%,100% ;
+    background-image: url(./img/zyra.jpg);
+    background-repeat: repeat-x;
+    animation: transicao 1.5s linear ;
+    
+}
+
+.body label,input {
+    border-radius: 03px;
+    outline: none;
+    height: 20px;
+    margin-top: 8px;
+    margin-bottom: -8px;
+    right: 140px;
+    width: 200px;
+    padding: 3px;
+    text-align: center;
+    
+}
+
+
+
+
+/* @keyframes transicao{
+    0% {opacity: 0; transform: translate(0px,03px)}
+    100%{opacity: 1; transform: translate(0px,0px)}
+ } */
+
+
+
+/*@keyframes fundoAnimado {
+    
+    100%{
+        background-image:url(./img/guadioes.jpg);
+    }
+    
+}
+
+/* @keyframes centralizado_cadastro {
+    0% {opacity: 0;};
+	50% {opacity:0;};
+	100% {opacity: 1};
+    
+}*/
+
+.card2 {
+    color: white;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+}
+
+.centralizado_cadastro2{
+	padding: 50px;
+	width: 200px;
+	margin-left: 150px;
+    text-align: center;
+    background-color: rgba(0, 0,0, 0.5);
+    border-radius: 15px;
+    animation-name: centralizado_cadastro;
+    animation-duration: 02s;
+    margin-bottom: 35px;  
+    flex-direction: column ;
+    float: left;
+   
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+}
+
+.titulo {
+    margin-top: 20px;
+}
+
+.img_logo {
+    width: 210px;
+    height: 21 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+.img_logoriot {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    margin-left: 15px;
+    margin-bottom: -15px;
+}

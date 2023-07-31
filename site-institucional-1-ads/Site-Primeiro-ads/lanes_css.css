@@ -1,0 +1,255 @@
+html,body{
+	margin: 0px;
+	padding: 0px;
+	scroll-behavior: smooth;
+}
+
+
+
+body {
+		
+	
+	background-image: url(./img/fundo_site.jpg);
+	font-family: 'Montserrat', sans-serif;
+	background-size: cover;
+	background-attachment: fixed; }
+	
+
+
+.drag p{
+	text-align: center;
+}
+
+.main {
+	padding: 120px 135px 70px 120px;
+
+	animation-name: conteudo;
+	animation-duration: 2s;
+}
+
+.mySlides {display:none;}
+
+.cv-pic {
+	float: left;
+	width: 280px;
+	margin-right: 30px;
+}
+
+.main .rodape1 {
+	margin-top: 30px;
+}
+
+.main h1 {
+	margin-top: -70px;
+	margin-bottom: 30px;
+	color: white;
+	font-weight: normal;
+	text-align: center;
+}
+
+.main h2{
+	color: white;
+	font-size:16px;
+	text-transform: uppercase;
+	font-weight: normal;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.main p {
+	font-size: 18px;
+	font-weight: 100px;
+	color: white;
+	line-height: 24px;
+	text-align: justify;
+}
+
+
+.caminho {
+	list-style: none;
+	padding-left: 0;
+	color: white;
+	
+}
+
+
+
+
+/* .img_logo_l {
+	width: 50px;
+	margin-top: 5px;
+	margin-left: 3px;
+	float: left;    
+} */
+
+.foto-noticias {
+	width: 100%;
+	margin-bottom: 15px;
+	margin-top: 15px
+}
+
+.img_rota {
+	width: 50%;
+}
+
+.img_rota2 {
+	width: 50%;
+	float: left;
+	height: 432px;
+}
+
+.img_rota3 {
+	width: 25%;
+	float: right;
+}
+
+.img_rota4 {
+	width: 100%;
+}
+
+.imagem_galeria img:hover{
+	-webkit-transform: scale(1.8);
+	-moz-transform: scale(1.8);
+	-o-transform: scale(1.8);
+	-ms-transform: scale(1.8);
+	transform: scale(1.8);
+}
+
+.back-link {
+	color: #f27609;
+}
+
+@keyframes titulo-capa {
+	0% {opacity: 0; transform: translate(0px,20px)}
+	100% {opacity: 1; transform: translate (0px,0px)}
+}
+
+@keyframes profile-capa{
+	0% {opacity: 0; transform: translate(0px,-20px)}
+	100% {opacity: 1; transform: translate (0px,0px)}
+}
+
+@keyframes conteudo{
+	0% {opacity: 0; transform: translate(20px,0px)}
+	100% {opacity: 1; transform: translate (0px,0px)}
+}
+
+@keyframes navegacao {
+	0% {opacity: 0;}
+	50% {opacity:0;}
+	100% {opacity: 1}
+}
+
+
+
+
+ .navigation li { 
+	 display: none; 
+ } 
+
+ .navigation li.threeline-icon { 
+	display: inline-block; 
+ } ;
+
+
+
+
+
+
+.main {
+	padding: 10px 5% 40px 5%;
+	
+}
+
+
+
+
+.main p {
+	text-align: left;
+	line-height: 30px;
+}
+
+
+
+
+.logo_preto {
+	width: 200px;
+	margin-left: 40%;
+	margin-top: 50px;
+	margin-bottom: -50px;
+
+}
+
+.direito   {
+	font-size: 15px;
+	color: black;
+	text-align: center;
+}
+
+.links_direito {
+	
+	text-align: justify;
+	text-align: center;
+	
+
+}
+
+
+
+/* Nav Bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0,0.4);
+}
+
+li {
+  float: left;
+  
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  rgba(0, 0, 0,0.4);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px  #1d3557(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+ 

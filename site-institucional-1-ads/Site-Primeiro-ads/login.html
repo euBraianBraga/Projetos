@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Login</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body  >			
+	<br>
+	
+
+<form  id="form_login" method="post" onsubmit="return entrar()">
+    <div class="card2">
+		<img class="img_logoriot" src="./img/logo_riot.png" alt="Logo da Rito">
+		<p>
+		<div class="centralizado_cadastro2" action="">
+		<img class="img_logo" src="./img/league_logo3.png" alt="Logo do League Of Legends">	
+		
+		<h2 class="titulo">Iniciar sessão</h2>
+
+		<label >Email</label>
+		<input name="email" type="email" placeholder="          Insita seu E-mail     " ><br><br>
+		<label  for="">Senha</label>
+		<input name="senha" type="password" placeholder="          Insira sua Senha     "><br><br>
+		    
+		</p>
+		<button  id="btn_entrar" >Cadastrar</button><br><Br>
+
+		
+		<label><a class="link" href="./cadastro.html">Criar uma conta  ?</a></label>
+		</div>
+		</div>
+	</form>
+
+	
+</body>
+</html>
+<script>
+      function entrar() {
+       
+	   var formulario = new URLSearchParams(new FormData(form_login));
+	   fetch("/usuarios/autenticar", {
+		   method: "POST",
+		   body: formulario
+	   }).then(resposta => {
+		   
+		   if (resposta.ok) {
+
+			   resposta.json().then(json => {
+
+				   sessionStorage.login_usuario_meuapp = json.email;
+				   sessionStorage.nome_usuario_meuapp = json.nome;
+				   
+				   window.location.href = 'index.html';
+			   });
+
+		   } else {
+
+			   console.log('Erro de login!');
+
+			   response.text().then(texto => {
+				   console.error(texto);
+				   
+			   });
+		   }
+	   });
+
+	   return false;
+   }
+
+
+
+</script>

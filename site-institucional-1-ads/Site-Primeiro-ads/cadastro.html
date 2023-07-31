@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cadastro</title>
+	<link rel="stylesheet" href="estilo_cadastro.css">
+</head>
+<body  >
+		<form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+		<div class="card2">
+		<img  class="img_logoriot" src="./img/logo_riot.png" alt="Logo da Rito">
+		<p>
+		<div class="centralizado_cadastro" action="">
+        <img class="img_logo" src="./img/league_logo3.png" alt="Logo do League Of Legends">	
+		<label >Nome</label>
+		<input name="nome" id="nome" type="text" placeholder="          Insira seu nome     " required minlength="3" ><br><br>
+		
+		<label >Email</label>
+		<input name="email" id="email" type="email" placeholder="          Insira seu Email   "><br><br>
+		
+		<!-- <select class="origem" name="" id=""> 
+				<option>-- Escolha uma origem -- </option>
+				<option value="">Demacia</option>
+				<option value="">Freljord</option>
+				<option value="">Ionia</option>
+				<option value="">Noxus</option>
+				<option value="">Void</option>
+			</select><Br><Br> -->
+        <label >Senha</label>
+		<input name="senha" id="senha" type="password" placeholder="Insira sua senha" required minlength="5"><br><br>
+		
+
+		<label >Confirmar senha</label>
+		<input type="password" placeholder="         Confirme sua senha    "><br><br> 
+		
+	
+        </p>
+        
+        <!-- <button class="botao" onclick="redirecionar()">Fazer Login</button><br><br> -->
+		<button class="botao">Cadastrar</button><br><br>
+
+
+        <a class="link" href="./login.html">Ja e Cadastrado ?</a>
+		</div>
+		</div>
+		 <!-- <iframe class="video"  src="https://www.youtube.com/embed/w1AenlOEXao"
+			 frameborder="0" allow="accelerometer; autoplay; encrypted-media; 
+			 gyroscope; picture-in-picture" allowfullscreen></iframe> !-->
+		</form>
+	<br>
+
+</body>
+</html>
+<script>
+ 
+ function cadastrar() {
+        
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    
+                });
+               
+            }
+        });
+
+        return false;
+    }		 
+		  
+	
+
+	
+</script>
+
+	
+		
+		  		
